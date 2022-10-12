@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predavanje 4</title>
+</head>
+
+<body>
+    <!--Multimedia-->
+    <h3>Primjer slike s aposlutnom putanjom</h3>
+    <img width="300"
+        src="https://thumbs.dreamstime.com/b/happy-student-thumbs-up-classroom-looking-you-classmates-background-96531919.jpg" />
+    <!--Multimedia2-->
+    <h3>Primjer slike s relativnom putanjom</h3>
+    <img width="300" src="./happy.png" />
+    <!--Forma-->
+    <h2>The form action</h2>
+    <form action="#" method="get" oninput="bonus.value=(parseInt(parseInt(placa.value)*0.2" ) + "kn" )>
+        <label for="post">Unesite sadrzaj svog posta:</label><br />
+        <textarea id=post name="post" rows="10" cols="200">Upisite svoj post</textarea>
+
+        <!--The button element-->
+        <h2>The button element</h2>
+        <button type="button" onclick="alert('HI MARGIE!')">Click Me!</button><br /><br />
+
+        <!--Legend and field set-->
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <fieldset>
+                <span style="position: apsolute; background-color: white; top -10px">How to do</span>
+                <div style="border: 1px solid black; padding: 10px position:relative">
+                    <label for="fname">First input</label><br>
+                    <input type="text" id="fname" name="fname" value="First value"><br>
+                    <label for="lname">Second value</label><br>
+                    <input type="text" id="lname" name="lname" value="Second value"><br><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <br>
+                <!--The data list element-->
+                <h3>Data list element</h3> <br />
+
+                <label for="polaznici">Odaberite polaznika iz lista</label>
+                <input list="polaznici" name="polaznik" />
+                <datalist id="polaznici">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br /><br />
+
+                <!--The output element-->
+                <h3>The output element</h3>
+                <label for="placa">Odaberite iznos place</label>
+                <input id="placa" name="placa" type="range" min="100000" max="10000000" value="500000"><br />
+                <label for="bonus">Odaberite iznos bonusa</label>
+                <output id="bonus" for="placa">10000</output>
+        </form>
+
+</body>
+
+</html>
